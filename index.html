@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery Wall — Image Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <p class="eyebrow">CodeAlpha · Frontend Internship</p>
+  <h1>Gallery Wall</h1>
+  <p class="subtitle">A small room of pictures. Tap a frame to look closer.</p>
+</header>
+
+<nav class="filters" id="filters">
+  <button class="filter-btn active" data-category="all">All Works</button>
+  <button class="filter-btn" data-category="nature">Nature</button>
+  <button class="filter-btn" data-category="urban">Urban</button>
+  <button class="filter-btn" data-category="portrait">Portrait</button>
+  <button class="filter-btn" data-category="architecture">Architecture</button>
+</nav>
+
+<main class="gallery" id="gallery"></main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+  <figure class="lb-frame">
+    <img id="lbImage" src="" alt="">
+    <figcaption>
+      <span id="lbTitle"></span>
+      <span class="lb-index" id="lbIndex"></span>
+    </figcaption>
+  </figure>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#10095;</button>
+</div>
+
+<footer class="site-footer">
+  <p>Built by Alex — CodeAlpha Frontend Internship, Task 1</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
